@@ -1,0 +1,16 @@
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Application.deps.json
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Application.dll
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Application.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.csprojAssemblyReference.cache
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.AssemblyInfoInputs.cache
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.AssemblyInfo.cs
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.csproj.CoreCompileInputs.cache
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.dll
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Domain.dll
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Infra.Data.dll
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Services.dll
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Domain.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Services.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\bin\Debug\netcoreapp3.1\KPMG.Games.Infra.Data.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Application\obj\Debug\netcoreapp3.1\KPMG.Games.Application.csproj.CopyComplete

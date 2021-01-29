@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KPMG.Games.Data\KPMG.Games.Infra.Data.csproj" />
+    <ProjectReference Include="..\KPMG.Games.Domain\KPMG.Games.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

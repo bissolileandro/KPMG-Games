@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KPMG.Games.Application.Application
 {
@@ -30,6 +31,18 @@ namespace KPMG.Games.Application.Application
         public void Dispose()
         {
             
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        {
+            try
+            {
+                return await _serviceBase.GetAllAsync();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Erro ao consultar os dados: {e.Message}");
+            }
         }
     }
 }

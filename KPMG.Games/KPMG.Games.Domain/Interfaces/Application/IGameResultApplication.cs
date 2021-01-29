@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KPMG.Games.Domain.Interfaces.Application
 {
     public interface IGameResultApplication: IApplicationBase<GameResult>
     {
-        IEnumerable<GameResult> Leaderboard();
+        Task<IEnumerable<GameResult>> Leaderboard();
         void AddGameResultAutoList();
     }
 }

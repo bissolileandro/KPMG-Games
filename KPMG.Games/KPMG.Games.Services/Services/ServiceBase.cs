@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using KPMG.Games.Domain.Interfaces.Repositories;
 using KPMG.Games.Domain.Interfaces.Services;
 using KPMG.Games.Infra.Data.Repositories;
@@ -29,6 +30,18 @@ namespace KPMG.Games.Services.Services
         public void Dispose()
         {
             
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        {
+            try
+            {
+                return await _repository.GetAllAsync();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Erro ao consultar os dados: {e.Message}");
+            }
         }
     }
 }

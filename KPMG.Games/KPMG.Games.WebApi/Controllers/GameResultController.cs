@@ -23,11 +23,12 @@ namespace KPMG.Games.WebApi.Controllers
         // GetLeaderboard: api/<GameResultController>
         [Route("GetLeaderboard")]
         [HttpGet]
-        public IActionResult GetLeaderboard()
+        public async Task<IActionResult> GetLeaderboard()
         {
             try
             {
-                var leaderboard = LeaderboardModel.EntityToModel(_gameResultApplication.Leaderboard());
+                var leaderboard = LeaderboardModel.EntityToModel(await _gameResultApplication.Leaderboard());
+                
                 return Ok(leaderboard);
             }
             catch (Exception e)

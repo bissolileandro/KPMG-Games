@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KPMG.Games.Domain.Interfaces.Services
 {
@@ -8,5 +9,6 @@ namespace KPMG.Games.Domain.Interfaces.Services
     {
         void AddGameResult(TEntity obj);
         IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
     }
 }

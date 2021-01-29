@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KPMG.Games.Application.Application
 {
@@ -18,11 +19,11 @@ namespace KPMG.Games.Application.Application
             _gameResultService = gameResultService;
         }
 
-        public IEnumerable<GameResult> Leaderboard()
+        public async Task<IEnumerable<GameResult>> Leaderboard()
         {
             try
             {
-                var listLeaderboard = _gameResultService.GetAll();
+                var listLeaderboard = await _gameResultService.GetAllAsync();
                 var listaAgrupada = listLeaderboard
                     .GroupBy(x => x.PlayerId)
                     .Select(x => new GameResult
@@ -58,7 +59,8 @@ namespace KPMG.Games.Application.Application
                 GameResult gameResult = new GameResult() 
                 {
                     GameId = 2,
-                    Timestamp = DateTime.Now
+                    Timestamp = DateTime.Now,
+                    LastUpdateDate = DateTime.Now
                 };
 
                 for (int i = 0; i < 1000; i++)

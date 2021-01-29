@@ -36,6 +36,7 @@ namespace KPMG.Games.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddCors();
             services.AddControllers();
             services.AddEntityFrameworkSqlServer()
                 .AddDbContext<KPGMGamesContext>(options =>
@@ -71,6 +72,7 @@ namespace KPMG.Games.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors(c => c.AllowAnyOrigin());
 
             app.UseEndpoints(endpoints =>
             {

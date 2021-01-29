@@ -72,7 +72,7 @@ namespace KPMG.Games.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseCors(c => c.AllowAnyOrigin());
+            app.UseCors(c => c.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseEndpoints(endpoints =>
             {
@@ -84,6 +84,7 @@ namespace KPMG.Games.WebApi
                 c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
             });
+            
         }
     }
 }

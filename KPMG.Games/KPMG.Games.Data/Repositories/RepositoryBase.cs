@@ -17,13 +17,27 @@ namespace KPMG.Games.Infra.Data.Repositories
         }
         public void AddGameResult(TEntity obj)
         {
-            db.Set<TEntity>().Add(obj);
-            db.SaveChanges();
+            try
+            {
+                db.Set<TEntity>().Add(obj);
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Erro ao persistir os dados: {e.Message}");
+            }            
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            return db.Set<TEntity>().ToList();
+            try
+            {
+                return db.Set<TEntity>().ToList();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Erro ao consultar os dados: {e.Message}");
+            }
         }
         public void Dispose()
         {

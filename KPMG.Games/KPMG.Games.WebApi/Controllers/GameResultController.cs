@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace KPMG.Games.WebApi.Controllers
@@ -22,26 +23,61 @@ namespace KPMG.Games.WebApi.Controllers
         // GetLeaderboard: api/<GameResultController>
         [Route("GetLeaderboard")]
         [HttpGet]
-        public IEnumerable<LeaderboardModel> GetLeaderboard()
+        public IActionResult GetLeaderboard()
         {
-            var leaderboard = LeaderboardModel.EntityToModel(_gameResultApplication.Leaderboard());
-            return leaderboard;
+            try
+            {
+                var leaderboard = LeaderboardModel.EntityToModel(_gameResultApplication.Leaderboard());
+                return Ok(leaderboard);
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest($"Erro: {e.Message}");
+            }
+            
         }
 
         // AddGameResult api/<GameResultController>
         [Route("AddGameResult")]
         [HttpPost]
-        public void AddGameResult([FromBody] GamesReultModel gamesReultModel)
+        public IActionResult AddGameResult([FromBody] GamesReultModel gamesReultModel)
         {
-            _gameResultApplication.AddGameResult(GamesReultModel.ModelToEntity(gamesReultModel));
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest($"Modelo Inválido");
+                }
+                _gameResultApplication.AddGameResult(GamesReultModel.ModelToEntity(gamesReultModel));
+                return Ok();
+                
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro: {e.Message}");
+            }
+            
         }
 
         // AddGameResultX api/<GameResultController>
         [Route("AddGameResultX")]
         [HttpPost]
-        public void AddGameResultX([FromBody] GamesReultModel gamesReultModel)
+        public IActionResult AddGameResultX([FromBody] GamesReultModel gamesReultModel)
         {
-            _gameResultApplication.AddGameResultX(GamesReultModel.ModelToEntity(gamesReultModel));            
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest($"Modelo Inválido");
+                }
+                _gameResultApplication.AddGameResultX(GamesReultModel.ModelToEntity(gamesReultModel));
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro: {e.Message}");
+            }
         }
 
     }

@@ -1,9 +1,9 @@
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\bin\Debug\netcoreapp3.1\KPMG.Games.Domain.deps.json
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\bin\Debug\netcoreapp3.1\KPMG.Games.Domain.dll
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\bin\Debug\netcoreapp3.1\KPMG.Games.Domain.pdb
+C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.csprojAssemblyReference.cache
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.AssemblyInfoInputs.cache
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.AssemblyInfo.cs
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.csproj.CoreCompileInputs.cache
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.dll
 C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.pdb
-C:\Users\LBissoli\Documents\Bissoli\Exemplos\KPMG-Games\KPMG.Games\KPMG.Games.Domain\obj\Debug\netcoreapp3.1\KPMG.Games.Domain.csprojAssemblyReference.cache

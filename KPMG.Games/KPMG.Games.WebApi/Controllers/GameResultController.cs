@@ -41,16 +41,15 @@ namespace KPMG.Games.WebApi.Controllers
         // AddGameResult api/<GameResultController>
         [Route("AddGameResult")]
         [HttpPost]
-        public IActionResult AddGameResult([FromBody] GamesReultModel gamesReultModel)
+        public IActionResult AddGameResult([FromBody] IEnumerable<GamesReultModel> gamesReultsModel)
         {
             try
             {
                 if (!ModelState.IsValid)
-                {
-                    return BadRequest($"Modelo Inválido");
-                }
-                _gameResultApplication.AddGameResult(GamesReultModel.ModelToEntity(gamesReultModel));
+                    return BadRequest($"Erro no modelo informado");
+                 _gameResultApplication.AddGameResult(GamesReultModel.ModelToEntityList(gamesReultsModel.ToArray()));
                 return Ok();
+                
                 
             }
             catch (Exception e)
@@ -60,10 +59,10 @@ namespace KPMG.Games.WebApi.Controllers
             
         }
 
-        // AddGameResultX api/<GameResultController>
-        [Route("AddGameResultX")]
+        // AddGameResultAutoList api/<GameResultController>
+        [Route("AddGameResultAutoList")]
         [HttpPost]
-        public IActionResult AddGameResultX([FromBody] GamesReultModel gamesReultModel)
+        public IActionResult AddGameResultAutoList()
         {
             try
             {
@@ -71,7 +70,7 @@ namespace KPMG.Games.WebApi.Controllers
                 {
                     return BadRequest($"Modelo Inválido");
                 }
-                _gameResultApplication.AddGameResultX(GamesReultModel.ModelToEntity(gamesReultModel));
+                _gameResultApplication.AddGameResultAutoList();
                 return Ok();
             }
             catch (Exception e)

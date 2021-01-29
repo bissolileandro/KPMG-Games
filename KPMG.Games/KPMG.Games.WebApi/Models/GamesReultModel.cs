@@ -25,5 +25,15 @@ namespace KPMG.Games.WebApi.Models
             };
         }
 
+        public static IEnumerable<GameResult> ModelToEntityList(IEnumerable<GamesReultModel> gamesReultModel)
+        {
+            var resultado = new List<GameResult>();
+            foreach (var item in gamesReultModel)
+            {
+                resultado.Add(ModelToEntity(item));
+            }
+            return resultado;
+        }
+
     }
 }

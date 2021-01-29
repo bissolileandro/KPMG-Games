@@ -15,9 +15,13 @@ namespace KPMG.Games.Application.Application
         {
             _serviceBase = serviceBase;
         }
-        public void AddGameResult(TEntity obj)
+        public void AddGameResult(IEnumerable<TEntity> obj)
         {
-            _serviceBase.AddGameResult(obj);
+            foreach (var item in obj)
+            {
+                _serviceBase.AddGameResult(item);
+            }
+           
         }
         public IEnumerable<TEntity> GetAll()
         {

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KPMG.Games.WebApi.Migrations
 {
     [DbContext(typeof(KPGMGamesContext))]
-    [Migration("20210128190133_Versao")]
-    partial class Versao
+    [Migration("20210129052047_VersaoInicial")]
+    partial class VersaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

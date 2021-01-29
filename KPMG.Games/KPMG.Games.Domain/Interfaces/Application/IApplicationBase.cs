@@ -6,7 +6,7 @@ namespace KPMG.Games.Domain.Interfaces.Application
 {
     public interface IApplicationBase<TEntity> where TEntity : class
     {
-        void AddGameResult(TEntity obj);
+        void AddGameResult(IEnumerable<TEntity> obj);
         IEnumerable<TEntity> GetAll();
     }
 }

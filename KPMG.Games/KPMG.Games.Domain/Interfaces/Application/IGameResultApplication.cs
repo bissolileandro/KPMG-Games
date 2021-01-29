@@ -8,6 +8,6 @@ namespace KPMG.Games.Domain.Interfaces.Application
     public interface IGameResultApplication: IApplicationBase<GameResult>
     {
         IEnumerable<GameResult> Leaderboard();
-        void AddGameResultX(GameResult gameResult);
+        void AddGameResultAutoList();
     }
 }

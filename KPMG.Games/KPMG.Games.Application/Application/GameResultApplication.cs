@@ -49,12 +49,18 @@ namespace KPMG.Games.Application.Application
             return lastUpdateDate.FirstOrDefault().Timestamp;
         }
 
-        public void AddGameResultX(GameResult gameResult)
+        public void AddGameResultAutoList()
         {
             try
             {
                 Random numAleatorio = new Random(18000);
                 Random winAleatorio = new Random(180000);
+                GameResult gameResult = new GameResult() 
+                {
+                    GameId = 2,
+                    Timestamp = DateTime.Now
+                };
+
                 for (int i = 0; i < 1000; i++)
                 {
                     gameResult.PlayerId = numAleatorio.Next(1800);

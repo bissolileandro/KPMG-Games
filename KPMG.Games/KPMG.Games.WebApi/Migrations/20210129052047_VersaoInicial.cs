@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace KPMG.Games.WebApi.Migrations
 {
-    public partial class Versao : Migration
+    public partial class VersaoInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

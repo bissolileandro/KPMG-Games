@@ -21,7 +21,7 @@ namespace KPMG.Games.WebApi.Models
                 {
                     PlayerId = item.PlayerId,
                     Balance = item.Win,
-                    LastUpdateDate = item.Timestamp
+                    LastUpdateDate = item.LastUpdateDate
                 };
                 listModel.Add(addItem);
             }

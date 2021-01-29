@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace KPMG.Games.WebApi.Migrations
 {
-    public partial class VersaoInicial : Migration
+    public partial class DbInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,8 @@ namespace KPMG.Games.WebApi.Migrations
                     PlayerId = table.Column<long>(type: "bigint", nullable: false),
                     GameId = table.Column<long>(type: "bigint", nullable: false),
                     Win = table.Column<long>(type: "bigint", nullable: false),
-                    Timestamp = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Timestamp = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastUpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

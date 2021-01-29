@@ -11,5 +11,6 @@ namespace KPMG.Games.Domain.Entities
         public long GameId { get; set; }
         public long Win { get; set; }
         public DateTime Timestamp { get; set; }
+        public DateTime LastUpdateDate { get; set; }
     }
 }

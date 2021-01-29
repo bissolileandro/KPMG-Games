@@ -29,6 +29,9 @@ namespace KPMG.Games.WebApi.Migrations
                     b.Property<long>("GameId")
                         .HasColumnType("bigint");
 
+                    b.Property<DateTime>("LastUpdateDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<long>("PlayerId")
                         .HasColumnType("bigint");
 

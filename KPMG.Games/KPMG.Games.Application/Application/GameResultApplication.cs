@@ -29,7 +29,7 @@ namespace KPMG.Games.Application.Application
                     {
                         PlayerId = x.First().PlayerId,
                         Win = x.Sum(c => c.Win),
-                        Timestamp = LastUpdateDate(x.Where(c => c.PlayerId == x.First().PlayerId))
+                        LastUpdateDate = LastUpdateDate(x.Where(c => c.PlayerId == x.First().PlayerId))
                     });
 
                 listLeaderboard = listaAgrupada.OrderByDescending(x => x.Win);
@@ -45,8 +45,8 @@ namespace KPMG.Games.Application.Application
 
         public DateTime LastUpdateDate(IEnumerable<GameResult> gameResults)
         {
-            var lastUpdateDate = gameResults.OrderByDescending(x => x.Timestamp);
-            return lastUpdateDate.FirstOrDefault().Timestamp;
+            var lastUpdateDate = gameResults.OrderByDescending(x => x.LastUpdateDate);
+            return lastUpdateDate.FirstOrDefault().LastUpdateDate;
         }
 
         public void AddGameResultAutoList()

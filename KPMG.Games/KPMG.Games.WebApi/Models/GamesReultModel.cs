@@ -21,7 +21,8 @@ namespace KPMG.Games.WebApi.Models
                 GameId = gamesReultModel.GameId,
                 PlayerId = gamesReultModel.PlayerId,
                 Timestamp = gamesReultModel.Timestamp,
-                Win = gamesReultModel.Win
+                Win = gamesReultModel.Win,
+                LastUpdateDate = DateTime.Now
             };
         }
 

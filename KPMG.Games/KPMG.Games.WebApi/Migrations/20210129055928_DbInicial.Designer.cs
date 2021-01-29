@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KPMG.Games.WebApi.Migrations
 {
     [DbContext(typeof(KPGMGamesContext))]
-    [Migration("20210129052047_VersaoInicial")]
-    partial class VersaoInicial
+    [Migration("20210129055928_DbInicial")]
+    partial class DbInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,9 @@ namespace KPMG.Games.WebApi.Migrations
 
                     b.Property<long>("GameId")
                         .HasColumnType("bigint");
+
+                    b.Property<DateTime>("LastUpdateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<long>("PlayerId")
                         .HasColumnType("bigint");
